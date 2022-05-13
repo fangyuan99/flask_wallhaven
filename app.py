@@ -17,7 +17,7 @@ def request_parse(req_data):
 @app.route('/', methods=["GET", "POST"])
 def hello_world():  # put application's code here
     if request.method == "GET":
-        return 'wallheaven接口云函数测试'
+        return 'wallheaven接口云'
     else:
         data = request_parse(request)
         url = data.get("url")
